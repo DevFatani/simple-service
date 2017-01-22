@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Simple Service</string>
+    <string name="service_description">this is a service that is going to download posts in background process</string>
 </resources>
