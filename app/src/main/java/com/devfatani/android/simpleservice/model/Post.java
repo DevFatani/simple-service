@@ -1,5 +1,7 @@
 package com.devfatani.android.simpleservice.model;
 
+import java.util.Locale;
+
 /**
  * Created by devfatani on 1/22/17.
  */
@@ -44,8 +46,6 @@ public class Post {
 
     @Override
     public String toString() {
-        return "id: " + this.id + " " +
-                "title: " + this.title + " " +
-                "body: " + this.body + " ";
+        return String.format(Locale.getDefault(), "id: %d\ntitle: %s\nbody: %s\n", this.id, this.title, this.body);
     }
 }
